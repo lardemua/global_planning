@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Needed only for searching for services -->
+    <node pkg="global_planning" name="global_planning_server" type="global_planning_server" output="screen" />
+        <!-- <param name="api_key_google_maps_api_directions" value="AIzaSyDJzTcc4EOMFkfoF3-mKfN92ixV_1Wfaz8"  /> -->
+       <param name="api_key_google_maps_api_directions" value="AIzaSyAkKkUqmusi15wLatHMRq4eQB9tcge-5bM"  />
+    <node pkg="global_planning" name="global_planning_client" type="global_planning_client" output="screen"/>
+     <!-- parameters to local database -->
+        <!-- <param name="dbname" value="atlas_navegacao_global"  />
+        <param name="user" value="pedro"  />
+        <param name="password" value="atlascar2"  />
+        <param name="hostaddr" value="127.0.0.1"  />
+        <param name="port" value="5432"  />   -->
+        <param name="dbname" value="atlas_navegacao_global"  />
+        <param name="user" value="atlascar2"  />
+        <param name="password" value="atlas"  />
+        <param name="hostaddr" value="127.0.0.1"  />
+        <param name="port" value="5432"  />
+</launch>
